@@ -3,7 +3,9 @@
 ### Çalıştırma
 
 `npm install` ile gerekli paketleri yükleyebilirsiniz.
+
 `npm run dev` ile projeyi development ortamı için çalıştırabilirsiniz.
+
 `npm run start` ile projeyi başlatabilirsiniz.
 
 ### End Pointler ( Thunder Client )
