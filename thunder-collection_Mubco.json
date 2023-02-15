@@ -1,0 +1,299 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Mubco",
+    "dateExported": "2023-02-15T21:54:49.308Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "942f03f1-35be-4a6a-b478-ab90c6a41acf",
+            "name": "Student",
+            "containerId": "",
+            "created": "2023-02-15T14:25:05.687Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "1aaef2a6-7131-42da-9001-c635fd699160",
+            "name": "Teacher",
+            "containerId": "",
+            "created": "2023-02-15T17:02:18.491Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "895ac12a-9831-4328-88bc-a9bc95e7af1c",
+            "name": "Home Works",
+            "containerId": "",
+            "created": "2023-02-15T17:44:58.751Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "af88ef62-e373-47d6-b543-54a25d822b37",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "942f03f1-35be-4a6a-b478-ab90c6a41acf",
+            "name": "create-student",
+            "url": "http://localhost:3000/api/create-student",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-02-15T13:54:46.126Z",
+            "modified": "2023-02-15T16:59:25.159Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"student_name\":\"Mehmet\",\n  \"student_surname\":\"Ekşi\",\n  \"student_class\":\"12 BLA\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "816eb324-918f-4bce-818c-402154265fed",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "1aaef2a6-7131-42da-9001-c635fd699160",
+            "name": "Create Teacher",
+            "url": "http://localhost:3000/api/create-teacher",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-02-15T17:02:18.491Z",
+            "modified": "2023-02-15T18:20:27.169Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"teacher_name\": \"Mehmet\",\n  \"teacher_surname\" : \"İnce\",\n  \"teacher_area\":\"Bilişim\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6894628d-4a39-43bb-9b4e-43a423d4df57",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "942f03f1-35be-4a6a-b478-ab90c6a41acf",
+            "name": "delete-student",
+            "url": "http://localhost:3000/api/delete-student/63ed0c2a137d9b370c0b79bc",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2023-02-15T13:55:10.886Z",
+            "modified": "2023-02-15T16:58:21.448Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "272d91cb-7b61-41f4-9c91-84cf4cac7405",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "1aaef2a6-7131-42da-9001-c635fd699160",
+            "name": "Delete Teacher",
+            "url": "http://localhost:3000/api/delete-teacher/63ed1558a5305deac4456a0f",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2023-02-15T17:02:18.492Z",
+            "modified": "2023-02-15T17:27:07.590Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0366a983-7fd8-49b5-956f-ffd3a0677110",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "942f03f1-35be-4a6a-b478-ab90c6a41acf",
+            "name": "student list",
+            "url": "http://localhost:3000/api/students",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-02-15T14:25:01.535Z",
+            "modified": "2023-02-15T16:59:51.477Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "863706f2-0fa4-4174-950a-f3fe7c25141e",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "1aaef2a6-7131-42da-9001-c635fd699160",
+            "name": "Teacher List",
+            "url": "http://localhost:3000/api/teachers",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-02-15T17:02:18.493Z",
+            "modified": "2023-02-15T17:17:32.853Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8a4bca73-c4c3-4d1a-aee5-231d5bfd12e0",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "895ac12a-9831-4328-88bc-a9bc95e7af1c",
+            "name": "Delete Home Work ",
+            "url": "http://localhost:3000/api/delete-home-work/63ed3765331770db0c26d2e6",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-02-15T19:50:20.666Z",
+            "modified": "2023-02-15T19:50:46.818Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f65238c9-01b6-493d-88e3-52c78875f3b0",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "942f03f1-35be-4a6a-b478-ab90c6a41acf",
+            "name": "get student by id",
+            "url": "http://localhost:3000/api/student/63ed08a593fbbf08e8d98ef5",
+            "method": "GET",
+            "sortNum": 35000,
+            "created": "2023-02-15T14:39:27.163Z",
+            "modified": "2023-02-15T17:01:51.120Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6050bd7c-cec7-42c1-a760-4c6c75d9bf99",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "1aaef2a6-7131-42da-9001-c635fd699160",
+            "name": "Get Teacher By Id",
+            "url": "http://localhost:3000/api/teacher/63ed08a593fbbf08e8d98ef5",
+            "method": "GET",
+            "sortNum": 35000,
+            "created": "2023-02-15T17:02:18.494Z",
+            "modified": "2023-02-15T17:22:59.100Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4529275e-54a8-4137-830b-885aa2fea9ed",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "942f03f1-35be-4a6a-b478-ab90c6a41acf",
+            "name": "update-student",
+            "url": "http://localhost:3000/api/update-student/63ed08a593fbbf08e8d98ef5",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2023-02-15T14:16:33.519Z",
+            "modified": "2023-02-15T17:02:06.638Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"student_name\":\"Ahmetcan\",\n  \"student_surname\":\"Üzümcü\",\n  \"ogrenci_sinif\": \"12 BLA\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e8d79ad7-e50b-4973-ae04-b9ff9eb1928d",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "1aaef2a6-7131-42da-9001-c635fd699160",
+            "name": "Update Teacher",
+            "url": "http://localhost:3000/api/update-teacher/63ed153da5305deac4456a02d",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2023-02-15T17:02:18.495Z",
+            "modified": "2023-02-15T17:36:40.258Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"teacher_area\":\"Bilişim\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "920be0e0-895a-4d17-bb1f-a9ab212c8ea3",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "895ac12a-9831-4328-88bc-a9bc95e7af1c",
+            "name": "Create Home Work",
+            "url": "http://localhost:3000/api/create-home-work",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-02-15T18:19:34.231Z",
+            "modified": "2023-02-15T21:19:59.821Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"work_name\":\"10 adet kesiler sorusu ve çözümü\",\n  \"student_id\" : \"63ed08a593fbbf08e8d98ef5\",\n  \"teacher_id\" : \"63ed1523a5305deac4456a0b\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "88bbe98d-a66a-461c-a630-aca6da6c6f7c",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "895ac12a-9831-4328-88bc-a9bc95e7af1c",
+            "name": "Update Home Work ",
+            "url": "http://localhost:3000/api/update-home-work/63ed220db28dee71be334818",
+            "method": "PATCH",
+            "sortNum": 65000,
+            "created": "2023-02-15T19:06:28.361Z",
+            "modified": "2023-02-15T19:09:12.184Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"work_name\":\"Mülteciler hakkında komposizyon\",\n  \"student_id\" : \"63ed08bc93fbbf08e8d98ef9\",\n  \"teacher_id\" : \"63ed1523a5305deac4456a0b\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "68dc93c3-9d85-4889-a00d-41adfa391408",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "895ac12a-9831-4328-88bc-a9bc95e7af1c",
+            "name": "Get HomeWork By Id ",
+            "url": "http://localhost:3000/api/home-work/63ed220db28dee71be334818",
+            "method": "GET",
+            "sortNum": 67500,
+            "created": "2023-02-15T19:48:11.136Z",
+            "modified": "2023-02-15T19:49:11.175Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0ee142e4-7f71-4901-a0c2-039bf28a7e87",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "895ac12a-9831-4328-88bc-a9bc95e7af1c",
+            "name": "Home Work List",
+            "url": "http://localhost:3000/api/home-works",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-02-15T18:38:30.917Z",
+            "modified": "2023-02-15T18:38:48.829Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d375912a-1d96-4e76-8f91-6ebf9801a49b",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "895ac12a-9831-4328-88bc-a9bc95e7af1c",
+            "name": "Student Home Work",
+            "url": "http://localhost:3000/api/student-home-works/63ed08a593fbbf08e8d98ef5",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-02-15T19:52:13.058Z",
+            "modified": "2023-02-15T21:14:59.873Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e3e5134c-0b44-4547-be58-9245ee92f616",
+            "colId": "f132001c-a7af-478c-b891-204de34c1910",
+            "containerId": "895ac12a-9831-4328-88bc-a9bc95e7af1c",
+            "name": "Home Work Given by Teacher",
+            "url": "http://localhost:3000/api/given-home-works/63ed1523a5305deac4456a0b",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-02-15T21:18:05.450Z",
+            "modified": "2023-02-15T21:19:42.012Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
