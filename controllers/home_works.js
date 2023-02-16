@@ -1,5 +1,5 @@
 const httpStatus = require('http-status');
-const { list, insert, updateById, deleteById, findById, getStudentsWorks, getGivenTeacherWorks } = require('../services/home_works');
+const { list, insert, updateById, deleteById, findById, getStudentsWorks, getGivenTeacherWorks, getGivenTeacherWorksToStudent } = require('../services/home_works');
 
 const workList = (req,res) =>{
    list().then(result =>{
@@ -134,6 +134,20 @@ const givenTeacherWorks = (req,res) =>{
         })
     });
 }
+const givenTeacherWorksToStudent = (req,res) =>{
+    getGivenTeacherWorksToStudent(req.params.teacher_id,req.params.student_id).then(data => {
+        return res.status(httpStatus.OK).json({
+            status:true,
+            message:'Öğretmenin öğrenciye verdiği derseler başarıyla getirildi.',
+            data:data
+        });
+    }).catch(err =>{
+        return res.status(httpStatus.INTERNAL_SERVER_ERROR).json({
+            status:false,
+            message:err?.message
+        })
+    });
+}
 
 
 module.exports = {
@@ -143,5 +157,6 @@ module.exports = {
     deleteWork,
     getWorkById,
     studentsWorks,
-    givenTeacherWorks
+    givenTeacherWorks,
+    givenTeacherWorksToStudent
 }

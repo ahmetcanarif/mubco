@@ -62,6 +62,18 @@ const getGivenTeacherWorks = (id) => {
         select : "student_name student_surname student_class"
     });
 }
+const getGivenTeacherWorksToStudent = (teacher_id,student_id) =>{
+    return HomeWorks.find({teacher_id:new ObjectId(teacher_id),student_id:new ObjectId(student_id)})
+    .populate({ 
+        path : "teacher_id",
+        select : "teacher_name teacher_surname teacher_area"
+    })
+    .populate({
+        path : "student_id",
+        select : "student_name student_surname student_class"
+    });
+}
+
 module.exports = {
     insert,
     list,
@@ -69,5 +81,6 @@ module.exports = {
     deleteById,
     findById,
     getStudentsWorks,
-    getGivenTeacherWorks
+    getGivenTeacherWorks,
+    getGivenTeacherWorksToStudent
 }
