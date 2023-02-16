@@ -1,0 +1,415 @@
+{
+    "info": {
+        "name": "Mubco",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Student",
+            "item": [
+                {
+                    "name": "create-student",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:3000/api/create-student",
+                            "path": [
+                                "api",
+                                "create-student"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"student_name\":\"Mehmet\",\n  \"student_surname\":\"Ekşi\",\n  \"student_class\":\"12 BLA\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "delete-student",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://localhost:3000/api/delete-student/63ed0c2a137d9b370c0b79bc",
+                            "path": [
+                                "api",
+                                "delete-student",
+                                "63ed0c2a137d9b370c0b79bc"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "student list",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/api/students",
+                            "path": [
+                                "api",
+                                "students"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "get student by id",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/api/student/63ed08a593fbbf08e8d98ef5",
+                            "path": [
+                                "api",
+                                "student",
+                                "63ed08a593fbbf08e8d98ef5"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "update-student",
+                    "request": {
+                        "method": "PATCH",
+                        "url": {
+                            "raw": "http://localhost:3000/api/update-student/63ed08a593fbbf08e8d98ef5",
+                            "path": [
+                                "api",
+                                "update-student",
+                                "63ed08a593fbbf08e8d98ef5"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"student_name\":\"Ahmetcan\",\n  \"student_surname\":\"Üzümcü\",\n  \"ogrenci_sinif\": \"12 BLA\"\n}"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Teacher",
+            "item": [
+                {
+                    "name": "Create Teacher",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:3000/api/create-teacher",
+                            "path": [
+                                "api",
+                                "create-teacher"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"teacher_name\": \"Mehmet\",\n  \"teacher_surname\" : \"İnce\",\n  \"teacher_area\":\"Bilişim\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Delete Teacher",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://localhost:3000/api/delete-teacher/63ed1558a5305deac4456a0f",
+                            "path": [
+                                "api",
+                                "delete-teacher",
+                                "63ed1558a5305deac4456a0f"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "Teacher List",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/api/teachers",
+                            "path": [
+                                "api",
+                                "teachers"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "Get Teacher By Id",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/api/teacher/63ed08a593fbbf08e8d98ef5",
+                            "path": [
+                                "api",
+                                "teacher",
+                                "63ed08a593fbbf08e8d98ef5"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "Update Teacher",
+                    "request": {
+                        "method": "PATCH",
+                        "url": {
+                            "raw": "http://localhost:3000/api/update-teacher/63ed153da5305deac4456a02d",
+                            "path": [
+                                "api",
+                                "update-teacher",
+                                "63ed153da5305deac4456a02d"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"teacher_area\":\"Bilişim\"\n}"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Home Works",
+            "item": [
+                {
+                    "name": "Delete Home Work ",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://localhost:3000/api/delete-home-work/63ed3765331770db0c26d2e6",
+                            "path": [
+                                "api",
+                                "delete-home-work",
+                                "63ed3765331770db0c26d2e6"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "Create Home Work",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:3000/api/create-home-work",
+                            "path": [
+                                "api",
+                                "create-home-work"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"work_name\":\"10 adet kesiler sorusu ve çözümü\",\n  \"student_id\" : \"63ed08a593fbbf08e8d98ef5\",\n  \"teacher_id\" : \"63ed1523a5305deac4456a0b\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Update Home Work ",
+                    "request": {
+                        "method": "PATCH",
+                        "url": {
+                            "raw": "http://localhost:3000/api/update-home-work/63ed220db28dee71be334818",
+                            "path": [
+                                "api",
+                                "update-home-work",
+                                "63ed220db28dee71be334818"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"work_name\":\"Mülteciler hakkında komposizyon\",\n  \"student_id\" : \"63ed08bc93fbbf08e8d98ef9\",\n  \"teacher_id\" : \"63ed1523a5305deac4456a0b\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Get HomeWork By Id ",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/api/home-work/63ed220db28dee71be334818",
+                            "path": [
+                                "api",
+                                "home-work",
+                                "63ed220db28dee71be334818"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "Home Work List",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/api/home-works",
+                            "path": [
+                                "api",
+                                "home-works"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "Student Home Work",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/api/student-home-works/63ed08a593fbbf08e8d98ef5",
+                            "path": [
+                                "api",
+                                "student-home-works",
+                                "63ed08a593fbbf08e8d98ef5"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "Home Work Given by Teacher",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/api/given-home-works/63ed1523a5305deac4456a0b",
+                            "path": [
+                                "api",
+                                "given-home-works",
+                                "63ed1523a5305deac4456a0b"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "Home Work Given by Teacher to Student",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/api/given-home-work-teacher-to-student/63ed1523a5305deac4456a0b/63ed08bc93fbbf08e8d98ef9",
+                            "path": [
+                                "api",
+                                "given-home-work-teacher-to-student",
+                                "63ed1523a5305deac4456a0b",
+                                "63ed08bc93fbbf08e8d98ef9"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
